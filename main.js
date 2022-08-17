@@ -129,7 +129,7 @@ const actualizarCarrito = () => {
 }
 
 
-/* ------------------------------------------- MODAL ---------------------------------------------------- */
+/* --------------------- MODAL ------------------------------ */
 
 const contenedorModal = document.getElementsByClassName('modal-contenedor')[0]
 const botonAbrir = document.getElementById('boton-carrito')
