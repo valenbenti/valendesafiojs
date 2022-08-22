@@ -1,11 +1,11 @@
 /* ----------- Stock ----------- */
 
 let stockProductos = [
-    {id: 1, nombre: "Tupper", tipo: "Gomitas", cantidad: 1, desc: "Tupper con 600 grs de gomitas importadas", precio: "1500",},
-    {id: 2, nombre: "Lata de gomitas", tipo: "Gomitas", cantidad: 1, desc: "Lata de gomitas acidas imperdible", precio: "1500",},
-    {id: 3, nombre: "Vaso starbucks", tipo: "Gomitas", cantidad: 1, desc: "Vaso transparente con 400 grs de gomitas acidas", precio: "900",},
-    {id: 4, nombre: "Box 6 divisiones", tipo: "Gomitas", cantidad: 1, desc: "Podes elegir hasta 6 tipos diferentes de gomitas acidas o importadas", precio: "1200",},
-    {id: 3, nombre: "Box chocolates", tipo: "Gomitas", cantidad: 1, desc: "Caja llena de chocolates ", precio: "2000",},
+    {id: 1, nombre: "Tupper", tipo: "Gomitas", cantidad: 1, desc: "Tupper con 600 grs de gomitas importadas", precio: 1500,"img":"tuppers.jpeg"},
+    {id: 2, nombre: "Lata de gomitas", tipo: "Gomitas", cantidad: 1, desc: "Lata de gomitas acidas imperdible", precio: 1500,"img":"coragomitas.jpeg"},
+    {id: 3, nombre: "Vaso starbucks", tipo: "Gomitas", cantidad: 1, desc: "Vaso transparente con 400 grs de gomitas acidas", precio: 900,"img":"vasostarbucks.jpeg"},
+    {id: 4, nombre: "Box 6 divisiones", tipo: "Gomitas", cantidad: 1, desc: "Podes elegir hasta 6 tipos diferentes de gomitas acidas o importadas", precio: 1200,"img":"box6.jpeg"},
+    {id: 5, nombre: "Box chocolates", tipo: "Gomitas", cantidad: 1, desc: "Caja llena de chocolates ", precio: 2000,"img":"boxchoco.jpeg"},
 ]
 
 
@@ -41,11 +41,11 @@ botonVaciar.addEventListener('click', () => {
 })
 
 
-stockProductos.forEach((producto) => {
+    stockProductos.forEach((producto) => {
     const div = document.createElement('div')
     div.classList.add('producto')
     div.innerHTML = `
-    <img src=${producto.img} alt= "">
+    <img src="./img/${producto.img}" alt= "">
     <h3>${producto.nombre}</h3>
     <p>${producto.desc}</p>
     <p class="precioProducto">Precio:$ ${producto.precio}</p>
@@ -129,7 +129,7 @@ const actualizarCarrito = () => {
 }
 
 
-/* --------------------- MODAL ------------------------------ */
+/* --------------------------------- MODAL ------------------------------ */
 
 const contenedorModal = document.getElementsByClassName('modal-contenedor')[0]
 const botonAbrir = document.getElementById('boton-carrito')
