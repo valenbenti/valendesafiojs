@@ -1,0 +1,48 @@
+{
+    
+    "productos": [
+
+        {
+            "id": 1,
+            "nombre": "Box 6 Divisiones",
+            "marca": "Gololandia",
+            "descripcion": "Contiene 500 grs de gomitas",
+            "precio": 1500,
+            "img": "box6.jpeg"
+        },
+        {
+            "id": 2,
+            "nombre": "Tuppers",
+            "marca": "Gololandia",
+            "descripcion": "Contiene 700grs de gomitas",
+            "precio": 2000,
+            "img": "tuppers.jpeg"
+        },
+    
+        {
+            "id": 3,
+            "nombre": "Box Chocolates",
+            "marca": "Gololandia",
+            "descripcion": "Contiene 5 chocolates especiales",
+            "precio": 2500,
+            "img": "boxchoco.jpeg"
+        },
+        {
+            "id": 4,
+            "nombre": "Vaso Starbucks",
+            "marca": "Gololandia",
+            "descripcion": " Contiene 300grs de gomitas",
+            "precio": 900,
+            "img": "vasostarbucks.jpeg"
+        },
+        {
+            "id": 5,
+            "nombre": "Corazon de gomitas",
+            "marca": "Gololandia",
+            "descripcion": "Contiene 350grs de gomitas",
+            "precio": 1100,
+            "img": "coragomitas.jpeg"
+        }
+    ]
+
+}
