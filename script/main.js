@@ -6,7 +6,7 @@ let iniciar;
 
 let url = './script/valen.json';
 
-/* Al cargar la web. */
+
 document.addEventListener('DOMContentLoaded',() =>{
 
     carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded',() =>{
 })
 
 
-/* Agregar articulos */
+/* se agregan los productos a el carrito */
 function addCarrito(id) {
     
     const prod = document.querySelector('#row_' + id);
@@ -31,12 +31,10 @@ function addCarrito(id) {
 }
 
 
-/* Eliminar carrito */
+/* se eliminan los productos de el carrito */
 function eliminar(id) {   
     iniciar.eliminarArticulo(id);
 }
-
-
 
 
 

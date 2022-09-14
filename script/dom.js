@@ -102,9 +102,9 @@ class Gomitas {
   actualizarContador() {
     let totalArticulos = this.contarProductos();
 
-    let countCarrito = document.querySelector("#badgeCarrito");
+    let contadorCarrito = document.querySelector("#bCarrito");
 
-    countCarrito.innerHTML = totalArticulos;
+    contadorCarrito.innerHTML = totalArticulos;
   }
 
   mostrarCarrito() {
@@ -157,6 +157,7 @@ class Gomitas {
     detalleCarrito.appendChild(row);
   }
 
+  
   eliminarArticulo(id) {
     Swal.fire({
       title: '"Esta seguro de eliminar el producto ?"',
@@ -182,3 +183,5 @@ class Gomitas {
     });
   }
 }
+
+
